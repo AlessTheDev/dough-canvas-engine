@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dough Engine</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  #canvas-container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  body{
+    background-color: black;
+    color: white;
+  }
+
+  #fps-display{
+    font-family: sans-serif;
+    position: absolute;
+  }
+</style>
+<body>
+  <div id="app">
+    <h1 id="fps-display"></h1>
+    <div id="canvas-container">
+      <canvas id="dough-engine"></canvas>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
